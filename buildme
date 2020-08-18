@@ -1,8 +1,7 @@
 #!/bin/bash
 BUILDTYPE=Release
-ARCH=$(uname -m)
+ARCH=armv7l
 ARM64=OFF
-CMAKE_TOOLCHAIN_FILE=../../../makefiles/cmake/toolchains/arm-linux-gnueabihf.cmake
 
 if [ "$1" = "--debug" ]; then
 	BUILDTYPE=Debug
